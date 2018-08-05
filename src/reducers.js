@@ -1,4 +1,9 @@
-import { CHANGE_SEARCH_FIELD } from './constants.js'
+import { 
+    CHANGE_SEARCH_FIELD,
+    REQUEST_ROBOTS_PENDING,
+    REQUEST_ROBOTS_SUCCESS,
+    REQUEST_ROBOTS_FAILED
+} from './constants.js'
 
 
 const initialState = {
@@ -13,3 +18,19 @@ export const searchRobots = (state = initialState, action = {}) => {
             return state;
     }
 }
+
+export const requestRobots = (state=initialState, action= {}) => {
+    switch (action.type) {
+        case REQUEST_ROBOTS_PENDING:
+            
+            break;
+        case REQUEST_ROBOTS_SUCCESS:
+        
+        break;
+        case REQUEST_ROBOTS_FAILED:
+        
+        break;
+        default:
+            break;
+    }
+} 
